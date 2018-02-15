@@ -7,11 +7,11 @@ events {
 }
 
 http {
-  lua_package_path ";;./lua/src/lib/plugins/?.lua;./lua/src/lib/?.lua;./lua/conf/?.lua;./lua/src/bin/?.lua";
+  lua_package_path ";;/opt/redx/src/lib/plugins/?.lua;/opt/redx/src/lib/?.lua;/opt/redx/conf/?.lua;/opt/redx/src/bin/?.lua";
 
   resolver 8.8.8.8;
 
-  init_by_lua_file './lua/src/bin/init_redx.lua';
+  init_by_lua_file '/opt/redx/src/bin/init_redx.lua';
 
   upstream fallback {
     server localhost:7700;
