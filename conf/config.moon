@@ -1,11 +1,11 @@
 M = {}
 
 -- redis host
-M.redis_host = '127.0.0.1'
+M.redis_host = os.getenv('REDIS_HOST')
 -- redis port
-M.redis_port = '6379'
+M.redis_port = os.getenv('REDIS_PORT')
 -- redis password
-M.redis_password = ''
+M.redis_password = os.getenv('REDIS_PASSWORD')
 
 -- redis timeout
 -- number of milliseconds for redis timeout
