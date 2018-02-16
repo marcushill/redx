@@ -8,5 +8,5 @@ M.redis_keepalive_max_idle_timeout = 30000
 M.max_path_length = 1
 M.session_length = 0
 M.default_score = 0
-M.plugins = {'random'}
+M.plugins = {}
 return M

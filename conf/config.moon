@@ -31,7 +31,7 @@ M.session_length = 900
 
 -- Plugin list
 -- List of plugins to enable within redx. Plugins are executed in given order below
-M.plugins = { 'random' }
+M.plugins = {}
 
 M.default_score = 0
 return M
